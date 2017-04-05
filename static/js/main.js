@@ -37,9 +37,9 @@ $(document).ready(function(){
         $("lo > div").removeClass('mini-blue').addClass('mini');
         $(this).addClass('mini-blue');
         if (!headerUp) {
-        $('.header').animate({ marginTop: "0px"}, '15', 'swing', function() {
+        $('.header').animate({ marginTop: "0px", paddingTop: "80px", height: "175"}, '75', 'swing', function() {
             $('ul.nav').animate({
-                height: "125px",
+                height: "275px",
                 marginTop: "0px",
             }, '50', 'swing', function(){
                 $('li').animate({
@@ -56,38 +56,14 @@ $(document).ready(function(){
         }
     });
 
-    $('div.mini#r').click(function() {
-        currIndex = 2;
-        $("lo > div").removeClass('mini-blue').addClass('mini');
-        $(this).addClass('mini-blue');
-        if (!headerUp) {
-        $('.header').animate({ marginTop: "0px"}, '15', 'swing', function() {
-            $('ul.nav').animate({
-                height: "125px",
-                marginTop: "0px",
-            }, '50', 'swing', function(){
-                $('li').animate({
-                    left: "2000px",
-                    }, '2000', 'swing');
-            });
-        });
-        headerUp=true;
-        }
-        else {
-            $('li').animate({
-                left: "2000px",
-                }, '2000', 'swing');
-        }
-    });
-
     $('div.mini#c').click(function() {
         currIndex = 3;
         $("lo > div").removeClass('mini-blue').addClass('mini');
         $(this).addClass('mini-blue');
         if (!headerUp) {
-        $('.header').animate({ marginTop: "0px"}, '75', 'swing', function() {
+        $('.header').animate({ marginTop: "0px", paddingTop: "80px", height: "175"}, '75', 'swing', function() {
             $('ul.nav').animate({
-                height: "125px",
+                height: "275px",
                 marginTop: "0px",
             }, '50', 'swing', function(){
                 $('li').animate({
