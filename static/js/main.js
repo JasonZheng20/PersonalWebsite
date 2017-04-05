@@ -2,42 +2,13 @@ var headerUp= false;
 var currIndex = 0;
 
 $(document).ready(function(){
-    $('div.large#n').click(function() {
-        if (currIndex == 1) {
-            $("lo > div").removeClass('mini-blue').addClass('mini');
-            $('div#r').addClass('mini-blue');
-            currIndex = 2;
-        }
-        else {
-            $("lo > div").removeClass('mini-blue').addClass('mini');
-            $('div#c').addClass('mini-blue');
-            currIndex = 3;
-        }
-        $('li').animate({
-            left: "-=1682.5px"}, '2000', 'swing');
-    });
-
-    $('div.large#p').click(function() {
-        if (currIndex == 2) {
-            $("lo > div").removeClass('mini-blue').addClass('mini');
-            $('div#a').addClass('mini-blue');
-            currIndex = 1;
-        }
-        else {
-            $("lo > div").removeClass('mini-blue').addClass('mini');
-            $('div#r').addClass('mini-blue');
-            currIndex = 2;
-        }
-        $('li').animate({
-            left: "+=1682.5px"}, '2000', 'swing');
-    });
-
+    
     $('div.mini#a').click(function() {
         currIndex = 1;
         $("lo > div").removeClass('mini-blue').addClass('mini');
         $(this).addClass('mini-blue');
         if (!headerUp) {
-        $('.header').animate({ marginTop: "0px", paddingTop: "80px", height: "175"}, '75', 'swing', function() {
+        $('.header').animate({ top: "-=150px", height: "295"}, '75', 'swing', function() {
             $('ul.nav').animate({
                 height: "275px",
                 marginTop: "0px",
@@ -61,13 +32,13 @@ $(document).ready(function(){
         $("lo > div").removeClass('mini-blue').addClass('mini');
         $(this).addClass('mini-blue');
         if (!headerUp) {
-        $('.header').animate({ marginTop: "0px", paddingTop: "80px", height: "175"}, '75', 'swing', function() {
+        $('.header').animate({ top: "-=150px", height: "295"}, '75', 'swing', function() {
             $('ul.nav').animate({
                 height: "275px",
                 marginTop: "0px",
             }, '50', 'swing', function(){
                 $('li').animate({
-                    left: "320px",
+                    left: "2090px",
                     }, '2000', 'swing');
             });
         });
@@ -75,7 +46,7 @@ $(document).ready(function(){
         }
         else {
             $('li').animate({
-                left: "319.5px",
+                left: "2090px",
                 }, '2000', 'swing');
         }
 
